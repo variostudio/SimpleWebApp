@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>RedTroll.link on AWS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <h1><center>Welcome to SBA @ AWS</center></h1>
+    <hr />
+    <table>
+        <tr><td>CPU count</td><td><p th:text="${cpuCnt}"/></td></tr>
+        <tr><td>Total memory</td><td><p th:text="${totalMem}"/></td></tr>
+        <tr><td>Max memory</td><td><p th:text="${maxMem}"/></td></tr>
+        <tr><td>Free memory</td><td><p th:text="${freeMem}"/></td></tr>
+    </table>
+</body>
+</html>
