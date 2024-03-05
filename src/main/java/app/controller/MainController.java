@@ -17,6 +17,7 @@ public class MainController {
         Integer cnt = jdbcTemplate.queryForObject("select count(*) from countries", Integer.class);
 
         model.addAttribute("name", name);
+        model.addAttribute("cCnt", cnt);
         System.out.println("Greeting requested: " + name);
         System.out.println(cnt + " countries found");
         return "greeting";
